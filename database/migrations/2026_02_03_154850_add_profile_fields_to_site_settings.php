@@ -14,7 +14,7 @@ return new class extends Migration
         // No schema changes needed as site_settings is key-value based
         // We will seed the new profile keys in a separate seeder or directly here
         \DB::table('site_settings')->insertOrIgnore([
-            ['key' => 'display_name', 'value' => 'Nguyễn Duy Thanh', 'type' => 'text', 'group' => 'Profile', 'created_at' => now(), 'updated_at' => now()],
+            ['key' => 'display_name', 'value' => 'Your Name', 'type' => 'text', 'group' => 'Profile', 'created_at' => now(), 'updated_at' => now()],
             ['key' => 'primary_slogan', 'value' => 'Crafting Digital Experiences & Capturing Light', 'type' => 'text', 'group' => 'Profile', 'created_at' => now(), 'updated_at' => now()],
             ['key' => 'short_bio', 'value' => 'I am a multidisciplinary creator sitting at the intersection of technology and art.', 'type' => 'textarea', 'group' => 'Profile', 'created_at' => now(), 'updated_at' => now()],
         ]);
